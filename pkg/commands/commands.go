@@ -37,7 +37,7 @@ func defineCommand() defineResult {
 		commands = store.NestCds
 
 		files = append(files, fileToCreate{name: "tsconfig.json", content: store.TsConf})
-		files = append(files, fileToCreate{name: "main.ts", content: store.MainTs})
+		files = append(files, fileToCreate{name: "src/main.ts", content: store.MainTs})
 
 		funcs = append(funcs, func() { runCommands(commands) })
 		funcs = append(funcs, func() { createFiles(files) })

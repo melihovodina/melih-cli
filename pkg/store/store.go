@@ -17,9 +17,7 @@ var NestCds = [][]string{
 	{"npm", "i", "typescript", "ts-node", "@types/node", "@nestjs/core", "@nestjs/common", "@nestjs/platform-express", "reflect-metadata", "rxjs"},
 	{"npm", "i", "ts-node-dev", "--save-dev"},
 	{"npm", "i", "-D", "tsx"},
-	{"mkdir", "src"},
-	{"cd", "src"},
-	{"nest", "g", "module", "app", "--no-flat"},
+	{"nest", "g", "module", "app", "--flat"},
 }
 
 var TsConf string = `{
